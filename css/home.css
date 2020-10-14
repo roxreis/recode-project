@@ -1,0 +1,69 @@
+/* Inicio do menu */
+header {
+    display: flex;  
+}
+
+#divMenu {
+    width: 100%; 
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li a {
+    text-decoration: none;
+}
+
+header img {
+    width: 75px;
+}
+
+/* Inicio da main */
+
+#imgBannerHome {
+    background-image: url(/image/beach-2824073_1280.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.divSlogan {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Inicio das opiniões */
+
+/* Pessoa 01 e 03 */
+
+.opinion1 {
+    width: 50%;
+    display: flex;
+    padding: 3%;
+    text-align: left;
+}
+
+.person1 {
+    width: 20%;
+}
+
+/* Pessoa 02 */
+
+.opinionCarlos {
+    width: 99%;
+    display: flex;
+    padding: 3%;
+}
+
+.textCarlos {
+    position: relative;
+    margin-left: 20px;
+}
+
+
