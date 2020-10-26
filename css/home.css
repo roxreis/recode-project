@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* Inicio do menu */
+header {
+    display: flex;
+    margin: 40px 100px 0px;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+#divMenu {
+    width: 100%; 
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    /* justify-content: space-between; */
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+li a {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: gray;
+    border-right: 1px gray solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration: none !important;
+}
+
+header img {
+    width: 129px;
+}
+
+/* Inicio da main */
+
+#imgBannerHome img {
+
+width: 1712px;
+
+height: 609px;
+
+background-size: cover;
+
+margin: 8px 100px 0px;
+}
+
+.slogan-banner {
+    position: relative;
+    background-color: #039097d1;
+    height: 731px;
+    width: 603px;
+    left: 441px;
+    bottom: 679px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.slogan-banner h1 {
+    color: white;
+    padding: 20px;
+    font-size: 3.54rem;
+}
+
+.botaoCadastrar {
+    height: 81px;
+    width: 224px;
+    background-color: #E24E42;
+    border-radius: 11px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    transition: background 0.2s;
+}
+
+.botaoCadastrar:hover {
+    background-color: #a53c32;
+}
+
+#imgBannerHome .botaoCadastrar img {
+    color: #FFF;
+    /* font-size: 2.1rem; */
+    padding: 10px;
+    /* text-decoration: none; */
+    /* margin-top: 82px; */
+    width: 100%;
+    height: 77%;
+    margin: 0;
+    margin-left: 9px;
+}
+
+#imgBannerHome .botaoCadastrar p {
+    color: white;
+    padding: 14px 27px 18px 7px;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+/* Inicio das opiniÃƒÆ’Ã‚Âµes */
+
+/* Pessoa 01 e 03 */
+
+.opinion1 {
+    width: 50%;
+    display: flex;
+    padding: 3%;
+    text-align: left;
+}
+
+.person1 {
+    width: 20%;
+}
+
+/* Pessoa 02 */
+
+.opinionCarlos {
+    width: 99%;
+    display: flex;
+    padding: 3%;
+}
+
+.textCarlos {
+    position: relative;
+    margin-left: 20px;
+}
+
+
