@@ -45,14 +45,14 @@
     max-width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
-    color: white;
+    color: var(--color-text-in-primary);
     margin-top: 2.4rem;
 }
 
 
 @media (min-width:700px) {
     .page-header {
-        height: 182px;
+        height: 340px;
     }
 
     .page-header .top-bar-container{

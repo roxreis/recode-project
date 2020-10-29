@@ -5,29 +5,26 @@
     <meta charset="UTF-8">          
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/partials/header.css">
     <link rel="stylesheet" href="styles/partials/page-give-classes.css">
     <link rel="stylesheet" href="styles/partials/forms.css">
     <script src="/scripts/addField.js" defer></script>
 
-    <title>Matchy | conquiste algo importante</title>
+    <title>Moradia+ | conquiste algo importante</title>
 </head>
 <body id="page-give-classes">
 
     <div id="container">
         <header class="page-header">
-            <div class="top-bar-container">
-                <a href="/"><img src="images/icons/back.svg" alt="Voltar"></a>
-                <img src="/image/logo-macthy.png" alt="proffy">
-            </div>
             <div class="header-content">
                 <strong>Que legal que você está aqui! Quer encontrar um lugar bacana?</strong>
                 <p>O primeiro passo, é fazer um cadastrinho.</p>
             </div>   
         </header>
         <main>
-            <form action="cadastrarUsuario.php" id="create-class" method="POST">
+            <form action="cadastrarUsuario.php" id="create-class" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Seus dados</legend>
                     <div class="input-block">
@@ -42,9 +39,13 @@
                         <label for="cpf">CPF<small>(somente números)</small></label>
                         <input name="cpf" id="cpf" type="number" maxlength="11" required>
                     </div>
-                    <div class="textarea-block">
+                    <div class="input-block ">
                         <label for="pass">Senha</label>
                         <input name="pass" id="pass" type="password" required></input>
+                    </div>
+                    <div class="input-block ">
+                        <label for="img">Sua Foto</label>
+                        <input type="file" name="img" id="img">
                     </div>
                 </fieldset>
                 <!-- <fieldset>
@@ -98,7 +99,7 @@
                     <img src="images/icons/warning.svg" alt="Aviso importante">
                     Importante!<br>Preencha todos os dados
                 </p>
-                <button type="submit" form="create-class">Salvar cadastro</button>
+                <button type="submit" name="cadastrar" form="create-class">Salvar cadastro</button>
             </footer>
            
         </main>
