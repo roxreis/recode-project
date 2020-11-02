@@ -18,6 +18,10 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
+    --papaya: #E24E42;
+    --mustard: #E9B000;
+    --blush-rosa:#EB6E80;
+    --agua: #008F95;
     font-size: 60%; /* controle das medidas rem */
 }
 
@@ -31,13 +35,12 @@
 html,
 body {
     height: 100vh;
+    
 }
 
 body {
     background: var(--color-background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 body,
@@ -50,8 +53,14 @@ textarea {
     
 
 #container {
-    width: 90vw;
-    max-width: 700px;
+    margin: 0px 100px 0px;
+
+}
+
+.bg-verde {
+    background: var(--agua);
+    width: 100%;
+    height: 250px;
 }
 
 @media (min-width: 700px) {

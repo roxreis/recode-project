@@ -1,0 +1,99 @@
+
+
+/* Inicio da main */
+.section-home{
+    height: 711px;
+}
+
+#imgBannerHome img {
+    width: 1645px;
+    height: 609px;
+    background-size: cover;
+}
+    
+.slogan-banner {
+    position: relative;
+    background-color: #039097d1;
+    height: 763px;
+    width: 603px;
+    left: 292px;
+    bottom: 679px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 18px;
+}
+
+.slogan-banner h1 {
+    color: white;
+    padding: 20px;
+    font-size: 6.5rem;
+    margin-bottom: 60px;
+}
+
+
+.slogan-banner a {
+    text-decoration: none;
+}
+
+.botaoCadastrar {
+    height: 81px;
+    width: 224px;
+    background-color: #E24E42;
+    border-radius: 11px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    transition: background 0.2s;
+}
+
+.botaoCadastrar:hover {
+    background-color: #a53c32;
+}
+
+#imgBannerHome .botaoCadastrar img {
+    color: #FFF;
+    /* font-size: 2.1rem; */
+    padding: 10px;
+    /* text-decoration: none; */
+    /* margin-top: 82px; */
+    width: 100%;
+    height: 77%;
+    margin: 0;
+    margin-left: 9px;
+}
+
+a .botaoCadastrar  {
+    color: white;
+    padding: 14px 27px 18px 7px;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1400px) {
+
+    .slogan-banner {
+        width: 442px;
+        left: 128px;
+        bottom: 660px;
+        height: 707px;
+    
+    }
+
+    #imgBannerHome img {
+        width: 100%;
+        height: 609px;
+        background-size: cover;
+    }
+
+    .slogan-banner h1 {
+        font-size: 5rem;
+    }
+}

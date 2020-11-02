@@ -8,6 +8,7 @@ if (isset($_POST['cadastrar'])) {
     $nome = $_POST['name'];
     $email = $_POST['email'];
     $cpf = $_POST['cpf'];
+    $nivelAcesso = $_POST['nivel'];
     $fileName = $_FILES['img']['name'];
     $linkTemp = $_FILES['img']['tmp_name'];
     $localSave = "img/$fileName";
@@ -16,7 +17,7 @@ if (isset($_POST['cadastrar'])) {
     $senhaSegura = password_hash($_POST['pass'], PASSWORD_BCRYPT);
 
  
-    $inserir = "INSERT INTO usuarios (user_name, user_email, user_cpf, user_pass, user_img) VALUES ('$nome', '$email', '$cpf', '$senhaSegura', '$localSave')";
+    $inserir = "INSERT INTO usuarios (user_name, user_email, user_cpf, user_pass, user_img, user_nivel, user_ativo ) VALUES ('$nome', '$email', '$cpf', '$senhaSegura', '$localSave', $nivelAcesso, 1)";
 
 
     if (mysqli_query($con, $inserir)) {

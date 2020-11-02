@@ -1,75 +1,83 @@
-.page-header {
-    background: #008F95;
+
+header {
     display: flex;
-    flex-direction: column;
+    margin: 0px 100px 0px;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 126px;
 }
 
-.page-header .top-bar-container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+header nav {
+    padding: 10px 30px 0px !important;
+}
+
+#divMenu {
+    width: 100%; 
     align-items: center;
-    padding: 1.6rem 0;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    /* justify-content: space-between; */
+    padding: 10px 25px;
+    justify-content: flex-end;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px !important;
+    color: gray;
+    border-right: 1px gray solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none !important;
 }
 
 
-.page-header .top-bar-container a {
-    height: 3.2rem;
-    transition: opacity 0.2s;
+header nav ul li .nome-usuario {
+    border-right: none !important;
+    color: var(--agua)!important;
+
+}
+
+header nav ul li .div-sair {
+   min-width: 59px;
+   left: 100px;
+}
+
+header nav ul li  .nome-usuario-sair {
+    font-size: 1.3rem;
+    color: rgba(0,0,0,.7)!important;
+    font-weight: 600;
+
+}
+
+header nav img {
+    width: 109px;
 }
 
 
-.page-header .top-bar-container a:hover {
-    opacity: 0.6;
-}
 
+@media (min-width: 700px) and (max-width: 1400px) {
 
-.page-header .top-bar-container > img {
-    height: 1.6rem;
-}
-
-.page-header .header-content {
-    width: 90%;
-    margin: 3.2rem auto;
-    position: relative;
-}
-
-.page-header .header-content strong {
-    font: 700 3.6rem Archivo;
-    line-height: 4.2rem;
-    color: var(--color-title-in-primary);
-}
-
-.page-header .header-content p {
-    max-width: 30rem;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: white;
-    margin-top: 2.4rem;
-}
-
-
-@media (min-width:700px) {
-    .page-header {
-        height: 182px;
+    header nav {
+        padding: 10px 0px 0px !important;
     }
 
-    .page-header .top-bar-container{
-        max-width: 1100px;
+    header nav img {
+        width: 99px;
+        margin-left: 14px;
     }
 
-    .page-header .header-content {
-        max-width: 740px;
-        margin: 0 auto;
-        flex: 1 1;
-        padding-bottom: 48px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    nav li a {
+        font-size: 1.3rem;
     }
 
-    .page-header .header-content strong {
-        max-width: 350px;
+    header {
+        
     }
 }

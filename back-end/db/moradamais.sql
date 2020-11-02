@@ -29,21 +29,32 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `usuarios` (
-  `id_user` int(11) NOT NULL,
-  `user_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `user_email` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `user_cpf` int(11) NOT NULL,
-  `user_pass` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `user_img` varchar(400) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50)  NOT NULL,
+  'last_name' varchar(100) NOT NULL,
+  `user_email` varchar(150) NOT NULL,
+  `user_cpf` varchar(11) NOT NULL,
+  `user_pass` varchar(32) NULL,
+  `user_img` varchar(400) NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
+
+CREATE TABLE `admin` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50)  NOT NULL,
+  'last_name' varchar(100) NOT NULL,
+  `user_email` varchar(150) NOT NULL,
+  `user_cpf` varchar(11) NOT NULL,
+  `user_pass` varchar(32) NULL,
+  `user_img` varchar(400) NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_user`, `user_name`, `user_email`, `user_cpf`, `user_pass`, `user_img`) VALUES
-(19, 'silva', 'silvana@silvana', 2147483647, '$2y$10$jnnFIi6JRbZrG3hjBRo37uMWI', 'img/unnamed.png'),
-(20, 'carlos', 'rodrigo@rodrigo', 2147483647, '$2y$10$Ypv4viEpH2A8qGZ/hvEa2ujlO', 'img/imagem-rosto.jpeg');
+INSERT INTO `usuarios` (`user_name`, `user_email`, `user_cpf`, `user_pass`, `user_img`) VALUES
+('silva', 'silvana@silvana', 2147483647, '$2y$10$jnnFIi6JRbZrG3hjBRo37uMWI', 'img/unnamed.png'),
+('carlos', 'rodrigo@rodrigo', 2147483647, '$2y$10$Ypv4viEpH2A8qGZ/hvEa2ujlO', 'img/imagem-rosto.jpeg');
 
 --
 -- Índices para tabelas despejadas
@@ -57,15 +68,8 @@ ALTER TABLE `usuarios`
   ADD UNIQUE KEY `id_user` (`id_user`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
 --
 
---
--- AUTO_INCREMENT de tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,0 +1,117 @@
+footer {
+    background: var(--agua);
+    height: 271px;
+    padding: 3rem;
+    margin-top: 100px;
+}
+
+footer section {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 18px;
+}
+
+footer img {
+    width: 155px;
+    height: 112px;
+
+}
+
+.footerInformacoes {
+    color: white;
+    display: flex;
+    width: 516px;
+    justify-content: space-between;
+}
+
+.footerInformacoes div ul a {
+    list-style: none !important;
+    color: white;
+    text-decoration: none;
+}
+
+
+.footerInformacoes h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+
+.footerSociais {
+    width: 193px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerSociais div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerSociais #footerSiga {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footerSociais h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  white;
+}
+
+.footerSociais i {
+    color: white;
+    font-size: 50px;
+
+}
+
+.footerAdm i{
+    color: white;
+    font-size: 20px;
+
+}
+
+
+.copyright {
+    height: 39px;
+    background-color: #017277;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.copyright p {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 0;
+    font-weight: bolder;
+    margin-right: 9px;
+}
+
+
+@media (min-width: 700px) and (max-width: 1400px) {
+    
+    .footerInformacoes h5 {
+        font-size: 1.8rem;
+    }
+
+    .footerSociais h5 {
+        font-size: 2rem;
+    }
+
+    .footerSociais i {
+        font-size: 40px;
+    }
+
+    .footerSociais div {
+        width: 139px;
+    }
+
+    .footerInformacoes {
+        width: 410px;
+    }
+}

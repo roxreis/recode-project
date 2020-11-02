@@ -1,16 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-
-}
-
-
-
 .page-header {
     background-color: #008F95;
     display: flex;

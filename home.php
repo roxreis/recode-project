@@ -1,41 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/home.css">
-   
-    <title>Home</title>
-</head>
-<body>
-    <header class="container">
-        <div>
-           <a href="home.html"><img src="/image/Lgbtcoração.png" alt="Logo"></a> 
-            
-        </div>
-        <div id="divMenu">
-            <ul class="menu">
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Cadastro</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </div>
-    </header>
-    <hr>
-    <main class="container">
-        <section>
+<?php 
+
+
+
+  include_once('includes/header.php');
+
+?>
+
+
+    <main id="container">
+        <section class="section-home">
             <div id="imgBannerHome">
+                <img src="img/banner/banner-maos.jpg" alt="">
             </div>
-            <div class="divSlogan">
+            <div class="slogan-banner">
                 <div>
-                    <h2>Este é nosso logan</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</p>
+                    <h1>Encontre alguém para dividir o aluguel que mais combine com seus gostos</h1>
+                </div>
+                <div>
+                    <a href="form-cadastro.php"><button class="botaoCadastrar"><i class='fas fa-fist-raised ml-5 mr-3'></i>Cadastrar</button></a>
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div class="opinion1">
                 <div>
                     <h2>Adriana</h2>
@@ -71,7 +57,7 @@
                     <img src="./image/Pessoa3.jpg" alt="Pedro">
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-</body>
-</html>
+
+    <?php  include_once('includes/footer.php');?>
