@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="styles/partials/home.css">
     <link rel="stylesheet" href="styles/partials/footer.css">
     <link rel="stylesheet" href="styles/partials/form-login.css">
+    <link rel="stylesheet" href="styles/partials/form-cadastro.css">
 
 
     <title>Moradia+ | conquiste algo importante</title>
@@ -63,7 +64,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nome-usuario" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?= $_SESSION['UsuarioNome'];?>
+                        <?= "Olá, ".$_SESSION['UsuarioNome'];?>
                     </a>
                     <div class="dropdown-menu div-sair" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item nome-usuario-sair" href="back-end/logout.php">Sair</a>

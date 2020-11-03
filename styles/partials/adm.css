@@ -1,3 +1,11 @@
+.page-adm {
+    background: var(--color-box-base);
+    padding: 2rem;
+    height: auto;
+    /*! border-radius: 0px 0px 10px 10px; */
+   
+}
+
 .page-adm #titulo-adm {
     width: 100%;
     background-color: #008F95;
@@ -11,8 +19,12 @@
     /*! font-size: 80px; */
 }
 
-.section-table-adm {
+.section-content-adm {
     width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    flex-direction: column;
 }
 
 .div-table-adm {
@@ -55,15 +67,9 @@ section .div-table-adm {
     margin-left: 22px;
 }
 
-.page-adm {
-    background: var(--color-box-base);
-    padding: 2rem;
-    height: 973px;
-    /*! border-radius: 0px 0px 10px 10px; */
-}
 
 .page-adm aside {
-    height: 769px;
+    height: auto;
     width: 274px;
     background-color: #E24E42;
 }
@@ -73,7 +79,42 @@ section .div-table-adm {
 }
 
 
+.form-cadas-admin {
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(226 226 226);
 
+}
+
+.form-cadas-admin fieldset h2{
+    margin: 10px 0px 20px 0px;
+    color: #7c7c7d;
+
+}
+
+.form-cadas-admin fieldset {
+    padding: 30px;
+}
+
+.form-cadas-admin fieldset button {
+    width: 75px;
+    height: 34px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background-color: var(--agua);
+    border-color: var(--agua);
+}
+
+.form-cadas-admin fieldset button:hover {
+    background-color: var(--agua-hover);
+    border-color: var(--agua-hover);
+}
+
+
+#div-cadast-admin{
+    margin-left: 25px;
+}
   
 
 

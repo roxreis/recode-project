@@ -18,6 +18,7 @@
     position: relative;
     bottom: 106px;
     border-radius: 10px;
+    height: 400px;
 }
 
 .form-login fieldset h2 {
@@ -30,3 +31,28 @@
     margin-bottom: 10px;
 }
 
+.form-login fieldset select {
+    width: 26%;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.3rem Archivo;
+    color: var(--color-text-complement);
+}
+
+.form-login fieldset button {
+    width: 75px;
+    height: 34px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background-color: var(--agua);
+    border-color: var(--agua);
+}
+
+.form-login fieldset button:hover {
+    background-color: var(--agua-hover);
+    border-color: var(--agua-hover);
+}

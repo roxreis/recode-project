@@ -39,14 +39,16 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 
-CREATE TABLE `admin` (
-  `id_user` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50)  NOT NULL,
-  'last_name' varchar(100) NOT NULL,
-  `user_email` varchar(150) NOT NULL,
-  `user_cpf` varchar(11) NOT NULL,
-  `user_pass` varchar(32) NULL,
-  `user_img` varchar(400) NULL
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id_admin` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50)  NOT NULL,
+  `admin_email` varchar(150) NOT NULL,
+  `admin_pass` varchar(32) NULL,
+  `cadastro` DATETIME NOT NULL ,
+  `nivel` INT(1) UNSIGNED NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id_admin`),
+  UNIQUE KEY `admin_email` (`admin_email`),
+  KEY `nivel` (`nivel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 --
 -- Extraindo dados da tabela `usuarios`

@@ -1,0 +1,45 @@
+.form-cadastro-titulo {
+    background: var(--agua);
+    height: 360px;
+
+}
+
+.form-cadastro-titulo div strong {
+    color: white;
+    font-size: 3rem;
+}
+
+.form-cadastro-titulo div p {
+    color: white;
+} 
+
+#cadastro-usuario {
+    width: 50%;
+    padding: 40px;
+    margin: 50px 0px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 276px;
+
+}
+
+#cadastro-usuario fieldset h2 {
+    color: #7c7c7d;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+#cadastro-usuario fieldset button {
+    width: 75px;
+    height: 34px;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    background-color: var(--agua);
+    border-color: var(--agua);
+}
+
+#cadastro-usuario fieldset button:hover {
+    background-color: var(--agua-hover);
+    border-color: var(--agua-hover);
+}

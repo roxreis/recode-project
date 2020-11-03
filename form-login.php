@@ -8,14 +8,23 @@
       <fieldset class="">
         <h2>Dados de Login</h2>
           <div class="input-block">
-            <label for="txUsuario">Usuário</label>
-            <input type="text" name="usuario" id="txUsuario" maxlength="25" />
+            <label for="txUsuario">Email</label>
+            <input type="email" name="email" id="txUsuario" />
           </div>
           <div class="input-block">
             <label for="txSenha">Senha</label>
             <input type="password" name="senha" id="txSenha" />
           </div>
-            <input class="btn btn-success" type="submit" value="Entrar" />
+          <div class="input-block mt-3">
+            <label>Nível de acesso</label>
+            <select name="who" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected value="1">Usuário</option>
+              <option value="2">Admin</option>
+            </select>
+          </div>
+          <div class="input-block">
+            <button  class="btn btn-success" type="submit" >Entrar</button>
+          </div>
       </fieldset>
     </form>
   </section>

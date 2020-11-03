@@ -45,14 +45,18 @@ header nav ul li .nome-usuario {
 }
 
 header nav ul li .div-sair {
-   min-width: 59px;
-   left: 100px;
+   min-width: 52px;
+   height: 35px;
+   left: 50px;
+   border-radius: 7px;
+   /* color: aqua; */
 }
 
 header nav ul li  .nome-usuario-sair {
-    font-size: 1.3rem;
-    color: rgba(0,0,0,.7)!important;
+    font-size: 1.2rem;
+    color: rgba(87, 87, 87, 0.7)!important;
     font-weight: 600;
+    text-transform: capitalize;
 
 }
 
